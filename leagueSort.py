@@ -1,6 +1,7 @@
 import pandas as pd # Import pandas
 
-def league_sort(league_list):
+
+def leagueSort(league_list):
 
 
     league_list_list = []
@@ -77,6 +78,7 @@ def league_sort(league_list):
                     df_dictOfleague_teams.iloc[i, 0]) + pointsName)
                 
 
+    return "pass"
 
 
     
@@ -92,8 +94,7 @@ if __name__ == '__main__':
         league_list.append(content_list[i].strip('\n'))
 
     
-    
-    league_sort(league_list)
+    leagueSort(league_list)
 
 
     league_file.close()
